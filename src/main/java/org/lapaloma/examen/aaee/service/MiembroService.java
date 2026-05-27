@@ -28,7 +28,7 @@ public class MiembroService {
         List<Miembro> lista = miembroDAO.obtenerListaMiembros();
 
         // Simulamos el caso de lista vacía para probar la excepción
-        lista=null;
+//        lista=null;
         
         if (lista == null || lista.isEmpty()) {
             throw new RuntimeException("No hay miembros disponibles");

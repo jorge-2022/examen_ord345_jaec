@@ -25,7 +25,7 @@ public class MinisterioService {
         List<Ministerio> lista = ministerioDAO.obtenerListaMinisterios();
 
         // Simulamos el caso de lista vacía para probar la excepción
-        lista=null;
+//        lista=null;
 
         if (lista == null || lista.isEmpty()) {
             throw new RuntimeException("No hay ministerios disponibles");
@@ -48,7 +48,7 @@ public class MinisterioService {
         Ministerio ministerio = ministerioDAO.obtenerMinisterioPorIdentificador(identificador);
 
         // Simulamos el caso de lista vacía para probar la excepción
-        ministerio=null;
+  //      ministerio=null;
 
         if (ministerio == null) {
             throw new MinisterioNoEncontradoException("Ministerio con identificador '" + identificador + "' no encontrado");
