@@ -1,7 +1,62 @@
-/bin/
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Java
 *.class
-/target/
+*.jar
+*.war
+*.ear
+
 # Eclipse
-.classpath
 .project
+.classpath
 .settings/
+.metadata/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Linux
+*~
+*.swp
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Docker
+docker-data/
+mysql_data/
+mariadb_data/
+mongo_data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Spring Boot
+application-local.properties
+
+# Temporary
+tmp/
+temp/
+
+# Build
+build/
+
+# Docker override
+docker-compose.override.yml
